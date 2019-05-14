@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main()
+{
+   setlocale(LC_ALL, "Portuguese");
+    int a, contador, soma;
+    a = 0;
+    soma = 0;
+    contador = 1;
+
+    while(contador <= 10){
+        printf("Digite os numeros:  \n");
+        scanf("%i", &a);
+        soma += a;
+        contador++;
+        if(a%2 != 0){
+            printf("o numero é impar\n");
+        }
+        else
+            printf("o numero é par!!!\n");
+    }
+        contador = (contador -  1);
+        printf("foram lidos %i e a soma deles  é: %i", contador,soma);
+
+    return 0;
+}
