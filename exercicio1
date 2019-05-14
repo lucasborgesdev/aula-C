@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, contador, soma;
+    a = 0;
+    soma = 0;
+    contador = 1;
+
+    while(contador <= 10){
+        printf("Digite os numeros:  \n");
+        scanf("%i", &a);
+        soma += a;
+        contador++;
+
+    }
+        contador = (contador -  1);
+        printf("foram lidos %i e a soma deles  é: %i", contador,soma);
+
+    return 0;
+}
