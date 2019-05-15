@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    int contador = 0;
+    int multi = 0;
+    int tab = 0;
+    printf("Digite qual tabuada voce quer:  \n");
+    scanf("%d", &tab);
+    do
+    {
+          multi = (tab * contador);
+          printf("%d X %d = %d\n", tab, contador, multi);
+          contador ++;
+    }while(contador <= 10);
+    return 0;
+}
