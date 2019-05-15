@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    int a = 0;
+    int b = 1;
+    int multi = 1;
+
+
+    for(a = 1; a <= 5; a++)
+    {
+
+        multi = multi * a;
+               }
+    printf("%d", multi);
+    return 0;
+}
