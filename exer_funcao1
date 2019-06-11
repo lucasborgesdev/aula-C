@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float soma(float a, float b)
+ {
+     float soma_1;
+     soma_1 = a + b;
+     return soma_1;
+ }
+ float sub(float a, float b)
+ {
+     float sub_1;
+     sub_1 = a - b;
+     return sub_1;
+ }
+ float mult(float a, float b)
+ {
+     float multi_1;
+     multi_1 = a * b;
+     return multi_1;
+ }
+ float divi(float a, float b)
+ {
+     float div_1;
+     div_1 = a / b;
+     return div_1;
+ }
+
+
+
+
+int main()
+{
+ /* soma*/
+
+    float a;
+    float b;
+    char escolha;
+    float res;float soma(float a, float b)
+ {
+     float soma_1;
+     soma_1 = a + b;
+     return soma_1;
+ }
+
+    printf("Digite o primeiro numero:\n");
+    scanf("%f", &a);
+    printf("Digite a operação : + - * / \n");
+    scanf("%s", &escolha);
+    printf("Digite o segundo numero: \n");
+    scanf("%f", &b);
+
+    switch(escolha){
+    case '+':
+        res = soma(a, b);
+        printf("%0.f", res);
+
+
+    break;
+    case '-':
+        res = sub(a, b);
+        printf("%0.f", res);
+
+    break;
+    case '*':
+        res = mult(a, b);
+        printf("%0.f", res);
+    printf("tres");
+    break;
+    case '/':
+        res = divi(a, b);
+        printf("%0.f", res);
+    printf("quatro");
+    res = soma(a, b);
+        printf("%0.f", res);
+    break;
+    }
+}
