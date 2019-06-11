@@ -36,12 +36,7 @@ int main()
     float a;
     float b;
     char escolha;
-    float res;float soma(float a, float b)
- {
-     float soma_1;
-     soma_1 = a + b;
-     return soma_1;
- }
+    float res;
 
     printf("Digite o primeiro numero:\n");
     scanf("%f", &a);
