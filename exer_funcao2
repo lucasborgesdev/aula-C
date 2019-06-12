@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float deci(float met)
+ {
+     float met_1;
+     met_1 = (met * 10);
+     return met_1;
+ }
+ float centi(float met){
+        float cent_1;
+        cent_1 = (met * 100);
+        return cent_1;
+ }
+  float mili(float met){
+        float cent_1;
+        cent_1 = (met * 1000);
+        return cent_1;
+ }
+
+
+int main()
+{
+    float met;
+    float calc_deci;
+    float calc_centi;
+    float calc_mili;
+    printf("Digite o tamanho em metros para ser calculado:  \n");
+    scanf("%f", &met);
+    calc_deci = deci(met);
+    calc_centi = centi(met);
+    calc_mili = mili(met);
+    printf("Voce digitou %2.f mt,\n Em decimetros voce tem %2.f,\n Em centimetros voce tem %2.f, \n Em milimitros %2.f", met, calc_deci, calc_centi, calc_mili);
+
+    return 0;
+}
