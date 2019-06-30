@@ -1,2 +1,2 @@
 # aula-C
-Atividade feita na aula
+Atividades realizadas durante a aula!
