@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int calc_maior(int a, int b,int c)
+{
+    int resultado;
+
+    if(a > b && a > c){
+        printf("O %d é o maior numero!!!!", a);
+        a = resultado;
+
+    }
+    if(b > a && b > c){
+        printf("O %d é o maior numero!!!!", b);
+        b = resultado;
+    }
+    if(c > b && c > a){
+        printf("O %d é o maior numero!!!!", c);
+        c = resultado;
+    }
+
+    return resultado;
+}
+int calc_menor(int a, int b,int c)
+{
+    int resultado;
+    if(a < b && a < c){
+        printf("O %d é o menor numero!!!!", a);
+        a = resultado;
+    }
+    if(b < a && b < c){
+        printf("O %d é o menor numero!!!!", b);
+        b = resultado;
+    }
+    if(c < b && c < a){
+        printf("O %d é o menor numero!!!!", c);
+        c = resultado;
+    }
+    return resultado;
+}
+
+int calc_media(int a, int b,int c)
+{
+    float resultado;
+    resultado = ((a+b+c)/3);
+    printf("A media de a b c é %.2f:", resultado);
+    return resultado;
+}
+
+
+int main()
+{
+    int a, b, c, opcao;
+    int chama_maior, chama_menor, chama_media;
+    int media;
+
+
+    printf("Digite um numero:  ");
+    scanf("%d", &a);
+    printf("\nDigite um numero: ");
+    scanf("%d", &b);
+    printf("\nDigite um numero: ");
+    scanf("%d", &c);
+    printf("\nDigite a opção:  ");
+    scanf("%d", &opcao);
+    switch(opcao)
+    {
+        case 1:
+            chama_maior = calc_maior(a,b,c);
+        break;
+        case 2:
+            chama_menor = calc_menor(a,b,c);
+        break;
+        case 3:
+            chama_media = calc_media(a,b,c);
+        break;
+
+    }
+}
