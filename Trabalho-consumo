@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float calc_valor(float lts, float dis, float preco)
+{
+    float calc_v = (lts * preco);
+
+    return calc_v;
+
+}
+float calc_consumo(float lts, float dis, float preco)
+{
+    float calc_c = (dis / lts);
+
+    return calc_c;
+}
+float calc_rendimento(float lts, float dis, float preco)
+{
+    float calc_r = (dis / calc_valor(lts,dis,preco));
+
+    return calc_r;
+}
+
+int main()
+{
+float lts, dis;
+int menu;
+float preco = 3.23;
+float chama_consumo, chama_valor, chama_rendimento;
+    printf("Digite quantos litros voce abasteceu:  ");
+    scanf("%f", &lts);
+    printf("\nDigite quantos km voce vai andar de carro: ");
+    scanf("%f", &dis);
+    printf("\nDigite qual opcao voce quer:\n1 para ovalor pago no abastecimento\n2 média de consumo em km/litro\n3 custo de combustível por km rodado:\n");
+    scanf("%d", &menu);
+    switch(menu)
+    {
+    case 1:
+        chama_valor = calc_valor(lts, dis, preco);
+        printf("O valor gasto no abastecimento foi: R$%.2f", chama_valor);
+    break;
+    case 2:
+        chama_consumo = calc_consumo(lts, dis, preco);
+        printf("A media de consumo em km/litro é : %.2f ", chama_consumo);
+
+    break;
+    case 3:
+        chama_rendimento = calc_rendimento(lts, dis, preco);
+         printf(" O custo de combustível por km rodado é : R$%.2f", chama_rendimento);
+    break;
+
+    }
+
+
+
+}
